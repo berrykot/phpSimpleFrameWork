@@ -1,2 +1,2 @@
 <?php
-//kot
+require "vendor/autoload.php";
