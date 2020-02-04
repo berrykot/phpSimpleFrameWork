@@ -4,36 +4,22 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInite9f37bc58b7d3159e781493744e96412
+class ComposerStaticInita3e79e49efc72c02f92d1a2629b77065
 {
-    public static $prefixLengthsPsr4 = array (
+    public static $prefixesPsr0 = array (
         'S' => 
         array (
-            'Slim\\Http\\' => 10,
-        ),
-        'P' => 
-        array (
-            'Psr\\Http\\Message\\' => 17,
-        ),
-    );
-
-    public static $prefixDirsPsr4 = array (
-        'Slim\\Http\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/slim/http/src',
-        ),
-        'Psr\\Http\\Message\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/http-factory/src',
-            1 => __DIR__ . '/..' . '/psr/http-message/src',
+            'Slim' => 
+            array (
+                0 => __DIR__ . '/..' . '/slim/slim',
+            ),
         ),
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInite9f37bc58b7d3159e781493744e96412::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInite9f37bc58b7d3159e781493744e96412::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInita3e79e49efc72c02f92d1a2629b77065::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }
