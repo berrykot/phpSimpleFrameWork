@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<script type="module" src="mainScript.js"></script>
+	<title>Главная</title>
+</head>
+
+<body>
+	<div id="app">
+		<div v-for="{id, Name, Description} in message">
+			<h3>{{ Name }}</h3>
+			<p>{{ Description }}</p>
+		</div>
+	</div>
+</body>
+
+</html>
